@@ -67,10 +67,10 @@ Current NMEA Sentences
 
 Data types: 
 
-Latitude      - data_gps['lat']
-Longitude     - data_gps['lon']
-Speed         - data_gps['speed']
-Track Angle   - data_gps['track']
+Latitude - data_gps['lat']
+Longitude - data_gps['lon']
+Speed - data_gps['speed']
+Track Angle - data_gps['track']
 UTC date/time - data_gps['utc']
-Status        - data_gps['status']
+Status - data_gps['status']
 
