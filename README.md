@@ -64,5 +64,36 @@ Current NMEA Sentences
 ----------------------
 
 ##### GPS Data
--dfdfd 
+- Latitude in decimal format = data_gps['lat']
+- Longitude in decimal format = data_gps['lon']
+- Speed in knots = data_gps['speed']
+- Course track in degrees = data_gps['track']
+- UTC in standard format, ie. 1994-11-05T13:15:30Z = data_gps['utc']
+- Status, A is Valid, V is Invalid = data_gps['status']
+
+##### Depth Data
+You must understand the source of the depth data, as it could be coming from a waterline reading, or below waterline reading. 
+
+- Depth in feet = data_depth['feet']
+- Depth in meters = data_depth['meters']
+- Depth in fathoms = data_depth['fathoms']
+- Depth offset, positive is transducer to waterline, negative is transducer to keel = data_depth['offset']
+
+##### Weather Data
+
+- Wind angle = data_weather['wind_angle']
+- Wind reference, R is relative, T is true = data_weather['wind_ref']
+- Wind speed = data_weather['wind_speed']
+- Wind unit, K/M/N = data_weather['wind_unit']
+- Water temp = data_weather['water_temp']
+- Water unit, C/F = data_weather['water_unit']
+- Air temp = data_weather['air_temp']
+- Air unit, C/F = data_weather['air_unit']
+
+##### Rudder Data
+
+- Starboard (or single) rudder angle = data_rudder['stdb_angle']
+- Starboard (or single) status, A is valid, V is invalid = data_rudder['stdb_status']
+- Port rudder angle = data_rudder['port_angle']
+- Port status, A is valid, V is invalid = data_rudder['port_status']
 
