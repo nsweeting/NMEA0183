@@ -53,7 +53,11 @@ if nmea.exit == False:
 	print nmea.data_weather['wind_angle']
 	print nmea.data_weather['water_temp']
 	
+	#Rudder data
 	print nmea.data_rudder['stbd_angle']
+	
+	#Quit the NMEA connection
+	nmea.quit()
 
 else:
 	print 'No connection!'
